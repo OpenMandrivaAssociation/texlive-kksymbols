@@ -1,9 +1,10 @@
 %global tl_name kksymbols
-%global tl_revision 79445
+%global tl_revision 79941
+%global tl_version 2.2.2
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	2.2.1
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	LaTeX commands for enclosing characters in circles, squares, diamonds, or bra...
 Group:		Publishing
@@ -13,7 +14,7 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/kksymbols.r%{tl_
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/kksymbols.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package offers LaTeX commands for enclosing characters in circles,
